@@ -301,8 +301,13 @@ python3 pip install -r requirments.txt
   DB_PORT=5432
   ```
 - в терминале выполните команды из директории проекта:
+
   - `docker-compose up -d --build` - собираем и запускаем инфраструктуру
   - `docker-compose exec web python manage.py migrate --noinput` - выполняем миграции
   - `docker-compose exec web python manage.py createsuperuser` - создаем суперпользователя
   - `docker-compose exec web python manage.py collectstatic --no-input` - собираем статику
   - `docker-compose exec web python manage.py loaddata fixtures.json` - загружаем тестовые данные
+
+  ## Сервис доступен по адресу
+
+  [www.yamdb.tonyhat.site](www.yamdb.tonyhat.site)
