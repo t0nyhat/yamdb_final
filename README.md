@@ -308,6 +308,8 @@ python3 pip install -r requirments.txt
   - `docker-compose exec web python manage.py collectstatic --no-input` - собираем статику
   - `docker-compose exec web python manage.py loaddata fixtures.json` - загружаем тестовые данные
 
-  ## Сервис доступен по адресу
+  ## Сервис доступен по адресам
 
-  [www.yamdb.tonyhat.site](www.yamdb.tonyhat.site)
+  - [www.yamdb.tonyhat.site](www.yamdb.tonyhat.site)
+  - [админка](www.yamdb.tonyhat.site/admin/)
+  - [документация](https://yamdb.tonyhat.site/redoc/)
