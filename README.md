@@ -310,6 +310,6 @@ python3 pip install -r requirments.txt
 
   ## Сервис доступен по адресам
 
-  - [www.yamdb.tonyhat.site](www.yamdb.tonyhat.site)
-  - [админка](www.yamdb.tonyhat.site/admin/)
+  - [www.yamdb.tonyhat.site](https://www.yamdb.tonyhat.site)
+  - [админка](https://www.yamdb.tonyhat.site/admin/)
   - [документация](https://yamdb.tonyhat.site/redoc/)
