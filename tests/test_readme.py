@@ -1,14 +1,14 @@
 import os
 import re
 
-from django.conf import settings
+from .conftest import root_dir
 
 
 class TestReadme:
 
     def test_readme(self):
         try:
-            with open(f'{os.path.join(settings.BASE_DIR, "README.md")}', 'r', encoding='utf-8') as f:
+            with open(f'{os.path.join(root_dir, "README.md")}', 'r', encoding='utf-8') as f:
                 readme = f.read()
         except FileNotFoundError:
             assert False, 'Проверьте, что добавили файл README.md'
@@ -18,4 +18,4 @@ class TestReadme:
             r'\/(actions\/)?workflows\/[-a-zA-Z0-9._+]+\/badge\.svg'
         )
 
-        assert re.search(re_str, readme), 'Проверьте, что добавили бейдж о статусе работы workflow в файл README.md'
+        assert re.search(re_str, readme), 'Проверьте, что добавили бейдж со статусом работы workflow в файл README.md'
